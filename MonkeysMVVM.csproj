@@ -53,6 +53,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\ShowByLocationView.xaml.cs">
+	    <DependentUpon>ShowByLocationView.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\ShowByLocationView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\ShowMonkeysByLocationView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

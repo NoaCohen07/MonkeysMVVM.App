@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MonkeysMVVM.Views.NewPage1"
+             Title="NewPage1">
+    <VerticalStackLayout>
+
+        <Entry 
+            Text="{Binding Location}"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+         />
+        <Button 
+            Text="GetMonekys"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Command="{Binding GetMonkeyCommand}"
+         />
+
+        <Label 
+            Text="{Binding overAllMonkeys}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="{Binding Name}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="{Binding Location, StringFormat='Number of Monkeys={0}'}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Image Source="{Binding ImageUrl}" HeightRequest="200"></Image>
+
+    </VerticalStackLayout>
+</ContentPage>

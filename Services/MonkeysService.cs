@@ -185,5 +185,6 @@ namespace MonkeysMVVM.Services
         {
             return monkeys.Where(m => m.Location == location).ToList();
         }
+      
     }
 }
